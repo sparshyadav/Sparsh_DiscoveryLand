@@ -150,7 +150,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-
     /* Tablet View */
     header {
         padding: 0 5%;
@@ -189,7 +188,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     /* Mobile View */
     header {
         padding: 0 3%;
@@ -227,8 +225,71 @@ footer {
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 650px) {
 
+    /* Screen size below 650px */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .header-left img {
+        height: 30px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-right-nav-menu {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+        height: auto;
+        margin: 0px 20px 40px 20px;
+    }
+
+    .main-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .footer-main-container {
+        gap: 20px;
+    }
+
+    .footer-main-upper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-upper-logo {
+        width: 100%;
+    }
+
+    .footer-upper-details {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .footer-details-div2,
+    .footer-details-div3 {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .footer-main-lower {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 525px) {
     html,
     body {
         overflow-x: hidden;
@@ -241,7 +302,6 @@ footer {
         overflow: hidden;
     }
 }
-
 
 @media (max-width: 480px) {
 
