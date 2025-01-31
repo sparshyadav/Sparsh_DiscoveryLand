@@ -150,7 +150,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    /* Tablet View */
     header {
         padding: 0 5%;
     }
@@ -188,7 +187,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Mobile View */
     header {
         padding: 0 3%;
     }
@@ -226,8 +224,6 @@ footer {
 }
 
 @media (max-width: 650px) {
-
-    /* Screen size below 650px */
     header {
         display: flex;
         justify-content: space-between;
@@ -265,7 +261,6 @@ footer {
 
     .footer-main-upper {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .footer-upper-logo {
@@ -290,6 +285,7 @@ footer {
 }
 
 @media (max-width: 525px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -304,8 +300,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
-    /* Small Mobile View */
     .header-right {
         display: none;
     }
