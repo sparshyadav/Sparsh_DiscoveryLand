@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    /* height: 100%; */
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "MessinaSansWeb", sans-serif;
+    background-color: black;
+    z-index: -5;
+}
+
+@font-face {
+    font-family: "GT Sectra Display Regular";
+    src: url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot");
+    src: url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.svg#GT Sectra Display Regular") format("svg");
+}
+
+@font-face {
+    font-family: "MessinaSansWeb";
+    src: url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.eot");
+    src: url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/c0622b61ddd8c0f0c968784eb3439516.svg#MessinaSansWeb") format("svg");
+}
+
+@font-face {
+    font-family: "GT Sectra Display Light";
+    src: url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.eot");
+    src: url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/66d66b2194f4e2510a65d72509b6673f.svg#GT Sectra Display Light")format("svg");
+}
+
+@font-face {
+    font-family: "GT Sectra Fine Book Italic";
+    src: url("https://db.onlinewebfonts.co   m/t/0de445f94f2abb57b287babe57b31679.eot");
+    src: url("https://db.onlinewebfonts.com/t/0de445f94f2abb57b287babe57b31679.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/0de445f94f2abb57b287babe57b31679.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/0de445f94f2abb57b287babe57b31679.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/0de445f94f2abb57b287babe57b31679.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/0de445f94f2abb57b287babe57b31679.svg#GT Sectra Fine Book Italic")format("svg");
+}
+
+.disc-gall-header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+
+}
+
+.disc-gall-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    background: transparent;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.disc-gall-header-nav-links {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-links div {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.disc-gall-header-nav-span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-menu-option{
+    border: 1px solid white;
+    margin-left: 3rem;
+}
+
+.disc-gall-header-nav-menu-option p{
+   font-size: 2rem;
+    color: white;
+    padding: 0rem .75rem;
+}
+
+.disc-gall-header-nav-links div:hover span {
+    width: 100%;
+}
+
+/* .disc-gall-main-gallery-photo {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 70vh; 
+    z-index: -1;
+    overflow: hidden; 
+}
+
+.disc-gall-main-gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+ 
+
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+}
+
+.disc-gall-main-gallery-photo {
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.disc-gall-main-gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.disc-gall-main-gallery-photo {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.disc-gall-main-gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.disc-gall-main-gallery-photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(178deg, rgba(36, 79, 132, 0.401) 20%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+}
+
+
+.disc-gall-main-gallery-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: "GT Sectra Display Regular";
+    z-index: 2;
+}
+
+.disc-gall-main-gallery-text p {
+    font-family: "GT Sectra Fine Book Italic";
+    font-style: italic;
+    font-size: 6rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.disc-gall-gallery-categories {
+    font-family: "GT Sectra";
+    width: 100%;
+}
+
+.disc-gall-gallery-categories2 {
+    font-family: "GT Sectra";
+    width: 100%;
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+.disc-gall-gallery-categories-container1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.disc-gall-gallery-categories-sub-container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.disc-gall-gallery-categories-container1 div {
+    width: 33.33%;
+    /* height: 60vh; */
+}
+
+.disc-gall-gallery-categories-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.disc-gall-gallery-categories-container1-text {
+    width: 100%;
+    background-color: rgb(16, 15, 15);
+    color: white;
+    padding: 3.25rem;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GT Sectra Display Light";
+}
+
+.disc-gall-gallery-categories-container1-text h4 {
+    font-size: 1.5rem;
+    font-weight: 50;
+}
+
+.disc-gall-categories-container {
+    transition: transform 0.4s ease;
+}
+
+.disc-gall-footer {
+    margin-top: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* height: vh; */
+}
+
+.disc-gall-footer-container {
+    /* transform: translateY(-100%); */
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 4rem;
+}
+
+.disc-gall-footer-sub-container{
+    width: 33.33%;
+}
+
+.disc-gall-footer-sub-container-links {
+    display: flex;
+}
+
+.disc-gall-footer-sub-container-links div {
+    width: 50%;
+}
+
+.disc-gall-footer-sub-container-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.disc-gall-footer-sub-container-contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.disc-gall-footer-sub-container-contact-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(198, 195, 195);
+}
+
+.disc-gall-footer-sub-container-contact-text h3 {
+    font-weight: 400;
+}
+
+.disc-gall-footer-sub-container-links-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 19.2px;
+}
+
+.disc-gall-footer-sub-container-links-text h3 {
+    font-weight: 400;
+}
+
+.disc-gall-footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.disc-gall-footer-bottom h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(176, 176, 176);
+}
+
+footer{
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .disc-gall-header-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .disc-gall-header-nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .disc-gall-main-gallery-photo {
+        height: 50vh;
+    }
+
+    .disc-gall-main-gallery-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .disc-gall-main-gallery-text h2 {
+        font-size: 3rem;
+    }
+
+    .disc-gall-footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
