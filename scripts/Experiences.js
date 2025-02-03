@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             darkLogo.style.display = "none";
 
             navLinks.forEach(link => {
-                link.style.color = "#000"; // Change text color to black
+                link.style.color = "#000"; 
             });
         } else {
             navbar.classList.remove("scrolled");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             darkLogo.style.display = "block";
 
             navLinks.forEach(link => {
-                link.style.color = "#fff"; // Revert text color to white
+                link.style.color = "#fff";
             });
         }
     });

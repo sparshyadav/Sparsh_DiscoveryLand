@@ -77,9 +77,6 @@ body {
     width: 100%;
 }
 
-
-
-
 .disc-gall-header {
     position: fixed;
     width: 100%;
@@ -122,7 +119,6 @@ body {
     z-index: 10;
     text-align: center;
     width: 100%;
-    /* border: 1px solid brown; */
 }
 
 .exp-hero-text-upper {
@@ -389,6 +385,11 @@ footer {
     padding-top: 20px;
     font-size: 22px;
     color: #BFBFBF;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-items {
