@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url(https://db.onlinewebfonts.com/c/39827d06fcbd2cd190f4d9c5725e7986?family=GT+Sectra+Book+Italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #0E0E0E;
+    font-family: "DM Sans", serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+}
+
+.disc-gall-header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+
+}
+
+.disc-gall-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    background: transparent;
+}
+
+.disc-gall-header-nav-links {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-links div {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.disc-gall-header-nav-span {
+    /* position: absolute; */
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-menu-option {
+    border: 1px solid white;
+    margin-left: 3rem;
+}
+
+.disc-gall-header-nav-menu-option p {
+    font-size: 2rem;
+    color: white;
+    padding: 0rem .75rem;
+}
+
+.disc-gall-header-nav-links div:hover span {
+    width: 100%;
+}
+
+.exp-hero {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.exp-hero video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.exp-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid brown; */
+}
+
+.exp-hero-text-upper {
+    height: 80%;
+    font-size: 100px;
+}
+
+.exp-hero-text-lower {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.exp-hero-text-lower img {
+    height: 50px;
+}
+
+.hero-up {
+    font-family: "GT Sectra Book Italic";
+}
+
+.exp-main-text {
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    gap: 50px;
+}
+
+.emp-text-main {
+    height: 80%;
+    width: 60%;
+    text-align: center;
+}
+
+.exp-main-logo {
+    height: 20%;
+}
+
+.textChange {
+    font-family: "GT Sectra Book Italic";
+}
+
+.logomark {
+    color: black;
+    height: 25px;
+}
+
+.exp-main-logo {
+    height: 25px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 45px 0;
+}
+
+.horizontal-Line {
+    width: 45%;
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.exp-main-about {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.main-about-text {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    color: #9A9A9A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 5rem;
+}
+
+.main-about-text-heading {
+    font-size: 1.7em;
+    color: black;
+}
+
+.main-about-pic {
+    width: 50%;
+    background-color: white;
+}
+
+.main-about-pic img {
+    height: 85%;
+    width: 65%;
+}
+
+
+
+.exp-main-activities {
+    background-color: #F3F3F3;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+}
+
+.exp-main-activity {
+    margin-top: 5%;
+    height: 100vh;
+    display: flex;
+}
+
+.exp-main-act-pic {
+    height: 100%;
+    width: 60%;
+}
+
+.exp-main-act-pic img {
+    height: 100%;
+    width: 100%;
+}
+
+.exp-main-act-details {
+    background-color: white;
+    height: 65%;
+    width: 40%;
+    position: relative;
+    top: 18%;
+    right: 15%;
+    padding: 4% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.exp-main-act-details-heading {
+    font-size: 45px;
+    font-family: "GT Sectra Book Italic";
+}
+
+.exp-main-act-details-desc {
+    font-size: 18px;
+    color: grey;
+}
+
+.exp-main-act-details-btn {
+    height: 55px;
+    width: 155px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleDetails {
+    position: relative;
+    left: 15%;
+}
+
+.lastActi {
+    margin-bottom: 10%;
+}
+
+footer {
+    background-color: #000000;
+    padding: 60px 10%;
+    color: #FDFDFD;
+    font-size: 1.2rem;
+    padding-top: 7%;
+    border-top: solid 1px #444;
+}
+
+.footer-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-main-container img {
+    height: 53px;
+}
+
+.footer-main-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+
+.footer-upper-logo {
+    max-width: 200px;
+}
+
+.footer-upper-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.details {
+    position: relative;
+    display: inline-block;
+}
+
+.details::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-out;
+}
+
+.details:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.footer-details-div1,
+.footer-details-div2,
+.footer-details-div3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-details-div1 .heading,
+.footer-details-div2 .heading,
+.footer-details-div3 .heading {
+    font-size: 16px;
+    color: #BFBFBF;
+    font-weight: 600;
+}
+
+.footer-main-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 22px;
+    color: #BFBFBF;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: inherit;
+}
