@@ -372,3 +372,8 @@ footer {
         text-align: center;
     }
 }
+
+.nav-items{
+    text-decoration: none;
+    color: inherit;
+}
