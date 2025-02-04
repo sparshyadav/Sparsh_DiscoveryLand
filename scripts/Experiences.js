@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const whiteLogo = document.querySelector(".disc-gall-header-nav-dark-logo");
     const darkLogo = document.querySelector(".disc-gall-header-nav-white-logo");
     const navLinks = document.querySelectorAll(".disc-gall-header-nav-links div, .nav-items div");
+    const animatedElements = document.querySelectorAll(".fade-in"); 
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
@@ -23,4 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 }); 
+
+    animatedElements.forEach(el => observer.observe(el)); 
 });
+
+
